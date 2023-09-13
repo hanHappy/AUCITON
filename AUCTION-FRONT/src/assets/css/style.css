@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+
+header, aside, footer, main, input, button, select, option {
+    color: var(--color-text-1);
+    font-family: var(--font-sub);
+}
+
+:root {
+    --font: 'Noto Sans KR';
+    --font-sub: 'IBM Plex Sans KR', sans-serif;
+
+    /* 폰트 메인색 */
+    --color-text-1: #2F3035;
+    /* 폰트 흐림 */
+    --color-text-2: #A3A7AE;
+
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+h2 {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+h3 {
+    font-weight: 900;
+    font-size: 1.1rem;
+}
