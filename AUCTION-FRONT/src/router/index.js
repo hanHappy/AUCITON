@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Layout from '../components/Layout.vue'
 import Home from '../views/Home.vue'
 import AuctionList from '../views/auction/List.vue'
+import AuctionDetail from '../views/auction/Detail.vue'
 
 import '@/assets/css/reset.css'
 import '@/assets/css/style.css'
@@ -15,7 +16,8 @@ const router = createRouter({
       component: Layout,
       children: [
         { path: '', component: Home },
-        { path: '/auction/list', component: AuctionList }
+        { path: '/auction/list', component: AuctionList },
+        { path: '/auction/:id', component: AuctionDetail }
       ]
     },
   ]
