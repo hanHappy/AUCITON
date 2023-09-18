@@ -4,6 +4,7 @@ import Layout from '../components/Layout.vue'
 import Home from '../views/Home.vue'
 import AuctionList from '../views/auction/List.vue'
 import AuctionRegistration from '../views/auction/Registration.vue'
+import AuctionDetail from '../views/auction/Detail.vue'
 
 // 이하 
 import '@/assets/css/reset.css'
@@ -19,7 +20,8 @@ const router = createRouter({
       children: [
         { path: '', component: Home },
         { path: '/auction/list', component: AuctionList },
-        { path: '/auction/Register', component: AuctionRegistration }
+        { path: '/auction/Register', component: AuctionRegistration },
+        { path: '/auction/:id', component: AuctionDetail }
       ]
     },
   ],
