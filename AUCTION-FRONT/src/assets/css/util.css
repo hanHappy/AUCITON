@@ -1,0 +1,28 @@
+.bold { font-weight: 900; }
+
+.d-none {
+    display: none !important;
+}
+
+/* 텍스트 감추기 */
+.text-hidden{
+    text-indent: -999px !important;
+    overflow: hidden !important;
+}
+
+/* 스크롤 제거 */
+.scroll-hidden::-webkit-scrollbar {
+    display: none;
+}
+.scroll-hidden {
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+}
+
+/* placeholder animation */
+.placeholder-effect::-webkit-input-placeholder{
+    transition: all 0.5s !important; 
+}
+.placeholder-effect:focus::-webkit-input-placeholder{
+    text-indent: -10px; opacity: 0 !important;
+}
