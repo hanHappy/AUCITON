@@ -20,7 +20,7 @@ const router = createRouter({
       children: [
         { path: '', component: Home },
         { path: '/auction/list', component: AuctionList },
-        { path: '/auction/Register', component: AuctionRegistration },
+        { path: '/auction/register', component: AuctionRegistration },
         { path: '/auction/:id', component: AuctionDetail }
       ]
     },
